@@ -24,5 +24,23 @@ return {
     {
         -- Neogit
         "TimUntersberger/neogit",
-    }
+    },
+
+    {
+        "mg979/vim-visual-multi"
+    },
+    {
+      "nvim-tree/nvim-tree.lua",
+      version = "*",
+      lazy = false,
+      dependencies = {
+        "nvim-tree/nvim-web-devicons",
+      },
+      config = function()
+        require("nvim-tree").setup {}
+      end,
+    },
+    {
+        "tpope/vim-commentary"
+    },
 }
