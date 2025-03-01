@@ -1,6 +1,6 @@
 
 vim.opt.nu = true -- Line Numbers
-vim.opt.relativenumber = true -- Relative Line Numbers
+vim.opt.relativenumber = false -- Relative Line Numbers
 
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4

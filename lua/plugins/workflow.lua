@@ -1,31 +1,8 @@
 return {
     {
-        -- Lazy Git
-        "kdheepak/lazygit.nvim",
-        lazy = true,
-        cmd = {
-            "LazyGit",
-            "LazyGitConfig",
-            "LazyGitCurrentFile",
-            "LazyGitFilter",
-            "LazyGitFilterCurrentFile",
-        },
-        -- optional for floating window border decoration
-        dependencies = {
-            "nvim-lua/plenary.nvim",
-        },
-        -- setting the keybinding for LazyGit with 'keys' is recommended in
-        -- order to load the plugin when the command is run for the first time
-        keys = {
-            { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
-        },
-
-    },
-    {
         -- Neogit
         "TimUntersberger/neogit",
     },
-
     {
         "mg979/vim-visual-multi"
     },
@@ -42,5 +19,18 @@ return {
     },
     {
         "tpope/vim-commentary"
+    },
+    -- Session Manager
+    {
+
+        "Shatur/neovim-session-manager",
+
+    },
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true
+        -- use opts = {} for passing setup options
+        -- this is equivalent to setup({}) function
     },
 }
